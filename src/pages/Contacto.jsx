@@ -1,14 +1,28 @@
-import {React } from 'react';               
-import { Container} from 'react-bootstrap';
+import React from 'react';
+import { Container, Form, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Contacto = () => {
+function Contacto() {
   return (
-    <Container className="mt-5">
-      <h1>Contact</h1>
-      <p>This is the contact page of our application.</p>
-      <p>If you have any questions, feel free to reach out!</p>
+    <Container>
+      <h2>Contacto</h2>
+      <Form>
+        <Form.Group className="mb-3">
+          <Form.Label>Nombre</Form.Label>
+          <Form.Control type="text" placeholder="Tu nombre" />
+        </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="email" placeholder="tu@email.com" />
+        </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label>Mensaje</Form.Label>
+          <Form.Control as="textarea" rows={3} placeholder="Escribe un mensaje..."/>
+        </Form.Group>
+        <Button variant="primary" type="submit">Enviar</Button>
+      </Form>
     </Container>
   );
-}   
+} 
 
 export default Contacto;
