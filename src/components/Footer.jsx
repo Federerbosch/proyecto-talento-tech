@@ -9,7 +9,7 @@ import {
   FaFacebook,
   FaInstagram,
 } from 'react-icons/fa';
-import Logo from '../assets/logo.png'; // Asegúrate de que la ruta sea correcta
+import pokebola from '../assets/pokebola.png';
 
 function Footer() {
   return (
@@ -48,7 +48,7 @@ function Footer() {
           <Col className='border-top border-success'>
             <p className='pt-3'>&copy; Se reserva los derechos de autor</p>
             <img
-              src={Logo} // Asegurate de colocar la ruta correcta
+              src={pokebola} // Asegurate de colocar la ruta correcta
               alt="Logo"
               style={{ width: '60px', marginTop: '5px' }}
             />

@@ -4,7 +4,7 @@ import { Nav, Navbar, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaSearch, FaUser, FaShoppingCart } from 'react-icons/fa';
 import { Row, Col } from 'react-bootstrap';
-import Logo from '../assets/logo.png';
+import pokebola from '../assets/pokebola.png';
 
 const NavBar = () => {
   return (
@@ -14,7 +14,7 @@ const NavBar = () => {
           <Col xs={6} md={4}>
         <Link to={"/"}>
           <img 
-              src={Logo}	
+              src={pokebola}	
               alt="Logo"
               style={{ width: '100px', cursor: 'pointer' }}
             />
